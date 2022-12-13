@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/settings.css">
+	<script src="js/settings.js" defer></script>
+
+	<title>Settings - Onepass</title>
+</head>
+<body>
+	<header>
+		<a aria-label="Login" href="login.html" class="nav-button"><img class="nav-icon" src="img/home.svg" alt=""></a>
+		<h1>Settings</h1>
+	</header>
+	<main>
+		<div class="settings-form" id="settings-form">
+			<div class="settings-entry">
+				<label for="url-input">Server URL</label>
+				<p id="url-error" class="error-message hidden" aria-hidden="true"></p>
+				<input type="text" name="url" id="url-input" autofocus required>
+			</div>
+			<input id="settings-submit" type="submit" value="Save">
+		</div>
+	</main>
+</body>
+</html>

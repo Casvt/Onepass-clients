@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/login.css">
+	<script src="js/login.js" defer></script>
+
+	<title>Login - Onepass</title>
+</head>
+<body>
+	<header>
+		<a aria-label="Settings" href="settings.html" class="nav-button"><img class="nav-icon" src="img/settings.svg" alt=""></a>
+		<h1>Onepass</h1>
+	</header>
+	<main>
+		<div class="login-form" id="login-form">
+			<div class="form-entry">
+				<label for="username-input">Username</label>
+				<p id="username-error" class="error-message hidden" aria-hidden="true"></p>
+				<input type="text" name="username" id="username-input" autofocus required>
+			</div>
+			<div class="form-entry">
+				<label for="password-input">Password</label>
+				<p id="password-error" class="error-message hidden" aria-hidden="true"></p>
+				<input type="password" name="password" id="password-input" required>
+			</div>
+			<input id="login-submit" type="submit" value="Login">
+		</div>
+	</main>
+</body>
+</html>

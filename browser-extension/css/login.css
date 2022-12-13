@@ -1,0 +1,43 @@
+.login-form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	font-size: 22px;
+}
+
+.form-entry {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	align-items: center;
+}
+
+.form-entry > input {
+	width: 100%;
+
+	font-size: 25px;
+	color: var(--light-color);
+	background-color: transparent;
+
+	border-bottom: 1px solid var(--light-color);
+	border-radius: 2px;
+}
+
+.form-entry > input:focus {
+	outline: 1px solid var(--light-color);
+}
+
+#login-submit {
+	color: var(--light-color);
+	background-color: transparent;
+	border: 3px solid var(--light-color);
+	
+	font-size: 22px;
+	padding: 7px 15px;
+}
+
+#login-submit:hover {
+	cursor: pointer;
+}

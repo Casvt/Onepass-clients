@@ -1,0 +1,77 @@
+*, *::before, *::after {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:hover {
+	cursor: pointer;
+	border: 0;
+}
+
+:root {
+	--dark-color: rgb(53, 53, 53);
+	--light-color: rgb(255, 255, 255);
+	--accent-color: rgb(5, 168, 170);
+	--dark-accent-color: rgb(18, 36, 63);
+	--error-color: rgb(219, 84, 97);
+	--success-color: rgb(84, 219, 104);
+	--gradient: linear-gradient(225deg, var(--accent-color) 0%, var(--dark-accent-color) 100%);
+	
+	--window-width: 350px;
+	--window-height: 400px;
+}
+
+html {
+	width: var(--window-width);
+	height: var(--window-height);
+}
+
+.error-message {
+	color: var(--error-color) !important;
+	font-size: 1rem !important;
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	--header-padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: calc(var(--window-height) * 0.1);
+	padding: var(--header-padding);
+
+	background-color: var(--accent-color);
+	color: var(--light-color);
+}
+
+.nav-button {
+	background-color: transparent;
+	display: flex;
+	height: calc((var(--window-height) * 0.1) - (var(--header-padding) * 2));
+}
+
+.nav-icon {
+	height: 100%;
+	aspect-ratio: 1/1;
+}
+
+main {
+	height: calc(var(--window-height) * 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	overflow-y: auto;
+}

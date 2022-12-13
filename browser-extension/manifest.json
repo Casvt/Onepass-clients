@@ -1,0 +1,19 @@
+{
+	"name": "Onepass",
+	"description": "The browser extension to use Onepass",
+	"version": "1.0",
+	"manifest_version": 3,
+	"host_permissions": [
+		"http://*/",
+		"http://*/*",
+		"https://*/",
+		"https://*/*"
+	],
+	"permissions": [
+		"activeTab",
+		"scripting"
+	],
+	"action": {
+		"default_popup": "vault.html"
+	}
+}
